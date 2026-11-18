@@ -5,7 +5,7 @@ import java.util.ResourceBundle;
 import javafx.fxml.Initializable;
 import org.estuardogomez.system.Principal;
 
-public class MenuPrincipalController implements Initializable {
+public class LoginController implements Initializable {
     private Principal escenarioPrincipal;
     
     /*
@@ -21,6 +21,10 @@ public class MenuPrincipalController implements Initializable {
 
     public void setEscenarioPrincipal(Principal escenarioPrincipal) {
         this.escenarioPrincipal = escenarioPrincipal;
+    }
+    
+    public void registrarse(){
+        escenarioPrincipal.ventanaRegister();
     }
     
     
